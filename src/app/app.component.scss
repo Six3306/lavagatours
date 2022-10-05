@@ -1,0 +1,97 @@
+//estilos de la barra de menú
+#logoMenu {
+    width: 15%;
+    height: 15%;
+    margin-left: 3%;
+}
+
+#navBar {
+    background: #4B0B0B;
+}
+
+#navR {
+    margin-right: 3%!important;
+}
+
+.nav-link {
+    color: white;
+}
+
+//estilos de pantalla grande
+@media only screen and (max-width: 4000px) {
+    .img_background {
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/pictures/fondo1.jpg');
+        text-align: center;
+    }
+    #principalLogo {
+        width: 100%;
+        height: 80%;
+        text-align: center;
+    }
+    #logoP {
+        margin-top: 5%;
+    }
+    #secMenu {
+        width: 100%;
+        text-align: center;
+    }
+    ._btnMenu {
+        color: white;
+        background: transparent;
+        font-size: 45px;
+    }
+    ._btnMenu:hover {
+        color: #D49090;
+    }
+    .fixed {
+        position: fixed;
+        width: 100%;
+        transition: 0.2s linear;
+        top: 0px;
+    }
+    .nofixed {
+        position: static;
+        transition: 0.2s linear;
+        top: -50px;
+    }
+    #aboutUs {
+        width: 100%;
+        height: calc(100vh);
+    }
+    #services {
+        width: 100%;
+        height: calc(100%);
+    }
+    #contact {
+        width: 100%;
+        height: calc(100vh);
+    }
+}
+
+//estilos para pantalla de moviles
+@media only screen and (max-width: 600px) {
+    #principalLogo {
+        width: 100%;
+        height: 70%;
+        text-align: center;
+    }
+    #logoP {
+        margin-top: 5%;
+        padding: 10%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    ._btnMenu {
+        background: transparent;
+        font-size: 45px;
+    }
+}
+
+//orientacion horizontal
+@media only screen and (orientation: landscape) {
+    #spaceB {
+        visibility: visible;
+    }
+}

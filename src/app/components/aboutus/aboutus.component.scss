@@ -1,0 +1,106 @@
+// estilos generales
+.titleSection {
+    color: #4B0B0B;
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+    font-family: 'Antic Slab', serif;
+}
+
+.subtitle {
+    color: #4B0B0B;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Antic Slab', serif;
+}
+
+#firstContainer {
+    margin-top: 3%;
+    text-align: center;
+    max-height: 35%;
+}
+
+#firstRow {
+    vertical-align: middle;
+}
+
+#textAbout p {
+    text-align: justify;
+    vertical-align: middle;
+}
+
+#parr {
+    vertical-align: middle;
+}
+
+#imgIconAbout {
+    max-height: 50%!important;
+    max-width: 60%!important;
+    border-radius: 10%;
+}
+
+.container {
+    text-align: center;
+}
+
+.imgCer {
+    border-radius: 40%;
+    max-height: 50%!important;
+    max-width: 60%!important;
+}
+
+//estilos para pantallas grandes
+@media only screen and (max-width: 4000px) {
+    #whiteDiv {
+        visibility: hidden;
+    }
+    #textAbout p {
+        padding-top: 12%;
+    }
+}
+
+//estilos para pantallas de celulares
+@media only screen and (max-width: 600px) {
+    #whiteDiv {
+        visibility: visible;
+        margin-top: 50%;
+    }
+    .subtitle {
+        margin-top: 3%;
+    }
+    #imgIconAbout {
+        margin-top: 10%!important;
+    }
+}
+
+//estilos para pantallas de tablets
+@media only screen and (max-width: 1000px) {
+    .subtitle {
+        margin-top: 3%;
+    }
+}
+
+//para orientacion vertical de pantalla
+@media only screen and (orientation: portrait) {
+    //para orientacion vertical de pantalla y que se enfoque en tablets
+    @media only screen and (min-width: 700px) {
+        #secondContainer {
+            margin-top: 15%;
+        }
+        #textAbout p {
+            padding-top: 0%;
+        }
+        .imgCer {
+            max-width: 90%!important;
+            max-height: 90%!important;
+            margin-top: 30%;
+        }
+    }
+    //para orientacion vertical de pantalla y que se enfoque en celulares
+    @media only screen and (max-width: 600px) {
+        .imgCer {
+            max-width: 50%!important;
+            max-height: 50%!important;
+        }
+    }
+}

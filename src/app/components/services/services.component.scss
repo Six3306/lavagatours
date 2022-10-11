@@ -1,0 +1,58 @@
+//estilos generales
+.titleSection {
+    color: #4B0B0B;
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+    font-family: 'Antic Slab', serif;
+}
+
+.container {
+    text-align: center;
+}
+
+#firstContainer {
+    margin-top: 7%;
+}
+
+.row {
+    height: calc(50vh);
+    text-align: center;
+}
+
+.imgIconService {
+    max-width: 80%!important;
+    max-height: 80%!important;
+}
+
+.imgIconService:hover {
+    filter: opacity(.5);
+    cursor: pointer;
+}
+
+//estilos para pantallas de celular
+@media only screen and (max-width: 600px) {
+    #secondContainer {
+        margin-top: 50%;
+    }
+}
+
+//estilos para pantallas en orientacion vertical
+@media only screen and (orientation: portrait) {
+    .titleSection {
+        margin-top: 10%;
+    }
+    .container {
+        margin-top: 10%!important;
+    }
+    //estilos para pantallas en orientacion vertical de tamaño de celular
+    @media only screen and (max-width: 600px) {
+        .imgIconService {
+            max-width: 50%!important;
+            max-height: 50%!important;
+        }
+        #secondContainer {
+            margin-top: 40%!important;
+        }
+    }
+}

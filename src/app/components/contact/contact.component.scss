@@ -1,0 +1,101 @@
+// estilos generales
+.titleSection {
+    color: #4B0B0B;
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+    font-family: 'Antic Slab', serif;
+}
+
+#formContact {
+    text-align: center;
+}
+
+.mat-form-field {
+    width: 60%;
+}
+
+#nameContact,
+#emailContact,
+#phoneContact,
+#message {
+    text-align: center;
+}
+
+.btnSend {
+    background: #4B0B0B;
+    color: white;
+    width: 10%;
+    height: 10%;
+    font-family: 'Antic Slab', serif;
+    border-radius: 50%;
+}
+
+#firstRow {
+    text-align: center;
+}
+
+.imgSN {
+    width: 30%;
+    height: 60%;
+}
+
+.imgSN:hover,
+.btnSend:hover {
+    filter: opacity(.5);
+    cursor: pointer;
+}
+
+#footerContent {
+    background-color: #4B0B0B;
+    color: white;
+}
+
+.sep {
+    visibility: hidden;
+}
+
+// estilos para pantallas grandes
+@media only screen and (max-width: 4000px) {
+    .btnSend {
+        font-size: 150%;
+    }
+}
+
+// estilos para pantallas de celulares
+@media only screen and (max-width: 600px) {
+    .btnSend {
+        font-size: 100%;
+        width: 15%;
+    }
+    .imgSN {
+        width: 14%;
+        height: 48%;
+    }
+}
+
+//estilos para pantalla en orientacion vertical
+@media only screen and (orientation: portrait) {
+    //estilos para pantalla en orientacion vertical de tablets
+    @media only screen and (min-width: 700px) {
+        #formContact {
+            margin-top: 8%;
+        }
+        .sep {
+            visibility: visible;
+        }
+        .titleSection {
+            margin-top: 7%;
+        }
+        #firstContainer {
+            margin-top: 5%;
+        }
+        .imgSN {
+            width: 60%;
+            height: 60%;
+        }
+        #footer {
+            margin-top: 7%;
+        }
+    }
+}

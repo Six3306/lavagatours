@@ -1,0 +1,75 @@
+<!-- titulo de la seccion -->
+<br>
+<h1 class="titleSection font2">
+    CONTÁCTANOS</h1>
+
+<br>
+<br>
+
+<!-- formulario de contacto -->
+<div id="formContact">
+    <form [formGroup]="formContact" autocomplete="off" (ngSubmit)="sendEmail($event)" class="md-form" id="formC">
+
+        <mat-form-field class="contactName">
+            <input matInput formControlName="nameContact" name="user_name" placeholder="Ingresa tú nombre" type="email" id="nameContact">
+        </mat-form-field>
+        <br>
+        <br>
+        <div class="sep"><br></div>
+        <mat-form-field class="contactEmailPerson">
+            <input matInput formControlName="emailContact" name="email_id" placeholder="Ingresa tú email" type="email" id="emailContact">
+        </mat-form-field>
+        <br>
+        <br>
+        <div class="sep"><br></div>
+        <mat-form-field class="contactPhonePerson">
+            <input matInput formControlName="phoneContact" name="phone_id" placeholder="Ingresa tú número de télefono (solo números)" type="number" id="phoneContact">
+        </mat-form-field>
+        <br>
+        <br>
+        <div class="sep"><br></div>
+        <mat-form-field class="contentMsg">
+            <textarea matInput formControlName="msg" name="message" placeholder="Escribe el mensaje que deseas enviar" id="message"></textarea>
+        </mat-form-field>
+        <br>
+        <br>
+        <br>
+        <div class="sep"><br></div>
+        <button [disabled]="!formContact.valid" class="btnSend">Enviar</button>
+    </form>
+</div>
+
+<!-- mini seccion de redes sociales -->
+
+<br>
+<br>
+<br>
+<h1 class="titleSection font2">
+    REDES SOCIALES</h1>
+<br>
+
+<!-- iconos de redes sociales -->
+
+<div class="container" id="firstContainer">
+    <div class="row" id="firstRow">
+        <div class="col-sm">
+            <img src="../../../assets/pictures/face.png" alt="" class="imgSN">
+        </div>
+        <div class="col-sm">
+            <img src="../../../assets/pictures/whats.png" alt="" class="imgSN">
+        </div>
+        <div class="col-sm">
+            <img src="../../../assets/pictures/insta.png" alt="" class="imgSN">
+        </div>
+    </div>
+
+</div>
+
+<!-- footer de la página -->
+<footer class="text-center text-lg-start bg-light text-muted" id="footer">
+
+    <div class="text-center p-4" id="footerContent">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold">SixTI</a>
+    </div>
+</footer>
